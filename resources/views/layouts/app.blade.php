@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('titulo')</title>
+    <title>@yield('El Rincón de la Castora')</title>
 
     <style>
         body {
@@ -64,11 +64,12 @@
 <body>
 
     <header>
-        <h1>Mi sitio Laravel</h1>
+        <h1>¡Bievenido al Rincón de la Castora!</h1>
         <nav>
             <a href="/">Inicio</a>
             <a href="/productos">Productos</a>
             <a href="/contacto">Contacto</a>
+            <a href="/nosotros">Nosotros</a>
         </nav>
     </header>
 
@@ -77,7 +78,7 @@
     </main>
 
     <footer>
-        <p>Trabajo practico de Laravel 13 - Vistas Blade</p>
+        <p>Espero que encuentre en nuestros productos 100% orgánicos y de muy buena cálidad el sabor que éstes buscando.</p>
     </footer>
 
 </body>

@@ -5,7 +5,7 @@
 @section('contenido')
 <h2>Listado de productos</h2>
 
-<p>Estos productos fueron enviados desde la ruta hacia la vista.</p>
+<p>Estos productos son orgánicos y 100% hechos en Argentina.</p>
 
 @forelse($productos as $producto)
 <div class="producto">
@@ -19,8 +19,11 @@
     @else
     <p class="sin-stock">Sin stock</p>
     @endif
+    @if($producto['precio'] > 1200)
+    <p>Producto destacado</p>
+    @endif
 </div>
 @empty
-<p>No hay productos cargados.</p>
+<p>No hay stock.</p>
 @endforelse
 @endsection

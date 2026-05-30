@@ -9,20 +9,25 @@ Route::get('/', function () {
 Route::get('/productos', function () { 
     $productos = [ 
         [ 
-            'nombre' => 'Yerba mate', 
-            'precio' => 2500, 
+            'nombre' => 'Yerba', 
+            'precio' => 1500, 
             'stock' => 15, 
         ], 
         [ 
-            'nombre' => 'Te verde', 
-            'precio' => 1800, 
+            'nombre' => 'Barritas de Granola', 
+            'precio' => 800, 
             'stock' => 8, 
         ], 
         [ 
             'nombre' => 'Miel pura', 
-            'precio' => 3200, 
+            'precio' => 2000, 
             'stock' => 0, 
         ], 
+        [
+            'nombre' => 'Leche de Alemendra', 
+            'precio' => 1500, 
+            'stock' => 20,
+        ],
     ]; 
  
     return view('productos', [ 
@@ -31,14 +36,14 @@ Route::get('/productos', function () {
 }); 
  
 Route::get('/contacto', function () { 
-    $email = 'contacto@miempresa.com'; 
- 
- 
- 
- 
- 
- 
+    $email = 'empresacastora@gmail.com'; 
+
     return view('contacto', [ 
         'email' => $email, 
     ]); 
+
 }); 
+// NUEVA RUTA: Nosotros
+Route::get('/nosotros', function () {
+    return view('nosotros');
+});
